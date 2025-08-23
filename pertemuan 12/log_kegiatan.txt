@@ -1,3 +1,4 @@
 tidur
 Belajar Python
 belajar seharian
+sare
