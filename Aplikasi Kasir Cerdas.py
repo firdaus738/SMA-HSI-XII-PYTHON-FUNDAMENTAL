@@ -46,6 +46,7 @@ def tampilkan_struk(nama_barang, harga_barang, jumlah_barang, subtotal, diskon, 
         total_per_item = harga_barang[i] * jumlah_barang[i]
         jumlah = jumlah_barang[i]
 
+        # ini harus DI DALAM loop
         if jumlah == int(jumlah):
             jumlah_str = str(int(jumlah))
         else:
@@ -95,7 +96,7 @@ print("\nMenghitung total belanja Anda...")
 subtotal = hitung_subtotal(daftar_harga_barang, daftar_jumlah_barang)
 diskon, persen_diskon = hitung_diskon(subtotal)
 
-
+# Tampilkan struk
 tampilkan_struk(
     daftar_nama_barang,
     daftar_harga_barang,
